@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>absolute 연습</title>
+<style>
+	#wrapper{background:pink;
+					width:300px; 
+					height:300px;
+					position:absolute; /*부모 요소를 기준으로 하는 위치임.*/
+					left:200px; 
+					top:100px;
+	}
+
+	#box1, #box2{width:100px; 
+							height:100px; 
+							position:absolute; 
+							/*부모 요소를 기준으로 하는 위치이므로, 현재 박스 두개의 부모는 wrapper임.*/
+	}
+
+	#box1{background:yellow;
+				left:100px; 
+				top:100px;}
+	#box2{background:green; 
+				left:-50px; 
+				top:100px;}
+
+</style>
+
+</head>
+<body>
+<!--다른 div들을 포함할 부모 div임.-->
+<div id="wrapper">
+	
+	<div id="box1">box1</div>
+	<div id="box2">box2</div>
+
+</div>
+
+</body>
+</html>

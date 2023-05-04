@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Box의 패딩과 마진</title>
+<style>
+	/*아이디를 선택자로 사용 시엔 #을 붙임.*/
+	#box1{width:200px; 
+				height:200px;
+				background:green;
+				padding-top:30px;
+				padding-right:50px;
+				padding-bottom:30px;
+				padding-left:50px;
+				box-sizing:border-box;
+	}
+	#box2{width:200px; 
+				height:200px;
+				background:pink;
+				/*한 줄로 표현 시, 수치값 작성 순서 
+				padding: top right bottom left*/
+				padding: 30px 50px 30px 50px;
+	}
+</style>
+</head>
+<body>
+	<div id="box1">자바기반 풀스택 개발자 과정</div>
+
+	<div id="box2">난 박스</div>
+
+</body>
+</html>
